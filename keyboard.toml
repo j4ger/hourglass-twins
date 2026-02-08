@@ -25,58 +25,42 @@ matrix_map = """
 [[layer]]
 name = "base"
 keys = """
-grv  Q     W     F     P     G        J     L     U     Y     scln  bsls
-caps TD(0) TD(1) TD(2) TD(3) TD(4)    TD(5) TD(6) TD(7) TD(8) TD(9) quot
-Left Z     X     C     V     B        K     M     comm  dot   slsh  rght
-          lbrc rbrc                         mins eql
-                esc    bspc   MO(1)
-                TD(10) TD(11) TD(12)
+grv          Q            W            F             P             G                J            L             U             Y            scln         bsls
+caps         MT(A, lgui)  MT(R, lalt)  MT(S, lctrl)  MT(T, lshift) D                H            MT(N, rshift) MT(E, rctrl)  MT(I, ralt)  MT(O, rgui)  quot
+Left         Z            X            C             V             B                K            M             comm          dot          slsh         rght
+                          lbrc         rbrc                                                                    mins          eql
+                                       esc             bspc           MO(1)
+                                       MT(Tab, lshift) MT(spc, lctrl) MT(ent, lgui)
 """
 
 [[layer]]
 name = "func"
 keys = """
-pgup Left Down Up   rght pgdn     pgup Left Down Up   rght pgdn
-mins 5    4    3    2    1        6    7    8    9    0    eql
-F6   F5   F4   F3   F2   F1       F7   F8   F9   F10  F11  F12
-          Home End                         Home End
-                No Bootloader No
-                No Bootloader TG(2)
+pgup         Left         Down         Up            rght          pgdn             pgup         Left          Down          Up           rght         pgdn
+mins         MT(5, lgui)  MT(4, lalt)  MT(3, lctrl)  MT(2, lshift) 1                6            MT(7, rshift) MT(8, rctrl)  MT(9, ralt)  MT(0, rgui)  eql
+F6           F5           F4           F3            F2            F1               F7           F8            F9            F10          F11          F12
+                          Home         End                                                                     Home          End
+                                       No           Bootloader   No
+                                       No           Bootloader   TG(2)
 """
 
 [[layer]]
 name = "game"
 keys = """
-M     Tab    Q    W    E    R        T    Y    I    O    P    bspc
-caps  LShift A    S    D    F        3    4    5    6    7    ent
-LCtrl Z      X    C    V    B        N    M    comm dot  slsh F12
-             1    2                            mins eql
-                esc  E    TG(0)
-                Tab  spc  LShift
+M            Tab          Q            W            E            R                T            Y            I            O            P            bspc
+caps         LShift       A            S            D            F                3            4            5            6            7            ent
+LAlt         Z            X            C            V            B                N            M            comm         dot          slsh         F12
+                          1            2                                                                    mins         eql
+                                       esc          E            TG(0)
+                                       Tab          spc          LCtrl
 """
 
 [behavior.morse]
 enable_flow_tap = true
 prior_idle_time = "120ms"
-unilateral_tap = true
-permissive_hold = true
-hold_timeout = "120ms"
-gap_timeout = "200ms"
-morses = [
-    { tap = "A", hold = "LGui", hold_after_tap = "1" },
-    { tap = "R", hold = "LAlt", hold_after_tap = "2" },
-    { tap = "S", hold = "LCtrl", hold_after_tap = "3" },
-    { tap = "T", hold = "LShift", hold_after_tap = "4" },
-    { tap = "D", hold_after_tap = "5" },
-    { tap = "H", hold_after_tap = "6" },
-    { tap = "N", hold = "RShift", hold_after_tap = "7" },
-    { tap = "E", hold = "RCtrl", hold_after_tap = "8" },
-    { tap = "I", hold = "RAlt", hold_after_tap = "9" },
-    { tap = "O", hold = "RGui", hold_after_tap = "0" },
-    { tap = "Tab", hold = "LShift" },
-    { tap = "spc", hold = "LCtrl" },
-    { tap = "ent", hold = "LGui" },
-]
+hold_on_other_press = true
+hold_timeout = "250ms"
+gap_timeout = "250ms"
 
 [split]
 connection = "serial"
