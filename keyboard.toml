@@ -29,8 +29,8 @@ grv          Q            W            F             P             G            
 caps         MT(A, lgui)  MT(R, lalt)  MT(S, lctrl)  MT(T, lshift) D                H            MT(N, rshift) MT(E, rctrl)  MT(I, ralt)  MT(O, rgui)  quot
 Left         Z            X            C             V             B                K            M             comm          dot          slsh         rght
                           lbrc         rbrc                                                                    mins          eql
-                                       esc             bspc           MO(1)
-                                       MT(Tab, lshift) MT(spc, lctrl) MT(ent, lgui)
+                                       esc              Tab            MT(del, lgui)
+                                       MT(bspc, lshift) MT(spc, lctrl) LT(1, ent)
 """
 
 [[layer]]
