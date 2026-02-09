@@ -27,10 +27,10 @@ name = "base"
 keys = """
 grv          Q            W            F             P             G                J            L             U             Y            scln         bsls
 caps         MT(A, lgui)  MT(R, lalt)  MT(S, lctrl)  MT(T, lshift) D                H            MT(N, rshift) MT(E, rctrl)  MT(I, ralt)  MT(O, rgui)  quot
-Left         Z            X            C             V             B                K            M             comm          dot          slsh         rght
+wbak         Z            X            C             V             B                K            M             comm          dot          slsh         wfwd
                           lbrc         rbrc                                                                    mins          eql
-                                       esc              Tab            MT(del, lgui)
-                                       MT(bspc, lshift) MT(spc, lctrl) LT(1, ent)
+                                       esc              Tab        MT(del, lalt)
+                                       MT(bspc, lshift) LT(1, spc) MT(ent, lgui)
 """
 
 [[layer]]
@@ -39,7 +39,7 @@ keys = """
 pgup         Left         Down         Up            rght          pgdn             pgup         Left          Down          Up           rght         pgdn
 mins         MT(5, lgui)  MT(4, lalt)  MT(3, lctrl)  MT(2, lshift) 1                6            MT(7, rshift) MT(8, rctrl)  MT(9, ralt)  MT(0, rgui)  eql
 F6           F5           F4           F3            F2            F1               F7           F8            F9            F10          F11          F12
-                          Home         End                                                                     Home          End
+                          volu         vold                                                                    Home          End
                                        No           Bootloader   No
                                        No           Bootloader   TG(2)
 """
