@@ -41,7 +41,7 @@ mins         MT(5, lgui)  MT(4, lalt)  MT(3, lctrl)  MT(2, lshift) 1            
 F6           F5           F4           F3            F2            F1               F7           F8            F9            F10          F11          F12
                           volu         vold                                                                    Home          End
                                        No           Bootloader   No
-                                       No           Bootloader   TG(2)
+                                       No           Bootloader   TO(2)
 """
 
 [[layer]]
@@ -51,8 +51,8 @@ M            Tab          Q            W            E            R              
 caps         LShift       A            S            D            F                3            4            5            6            7            ent
 LAlt         Z            X            C            V            B                N            M            comm         dot          slsh         F12
                           1            2                                                                    mins         eql
-                                       esc          E            TG(0)
-                                       Tab          spc          LCtrl
+                                       esc          O            TO(0)
+                                       L            spc          LCtrl
 """
 
 [behavior.morse]
